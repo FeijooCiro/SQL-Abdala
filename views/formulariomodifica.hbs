@@ -1,0 +1,64 @@
+{{#each clientes}}
+  <form method="post" action="/clientes/confirmarmodifica">
+    Ingrese el nombre del cliente:
+    <input type="text" name="nombre" size="50" value="{{nombre}}">
+
+    <br>
+
+    Ingrese el apellido del cliente:
+    <input type="text" name="apellido" size="50" value="{{apellido}}">
+
+    <br>
+
+    Ingrese la fecha de nacimiento el cliente:
+    <input type="date" name="FechaNac" value="{{FechaNac}}">
+
+    <br>
+
+    Ingrese el peso del cliente:
+    <input type="float" name="peso" value="{{peso}}">
+
+    <br>
+
+    Ingrese la altura del cliente:
+    <input type="float" name="altura" value="{{altura}}">
+
+    <br>
+
+    Ingrese la localidad del cliente:
+    <input type="text" name="localidad" value="{{localidad}}">
+
+    <br>
+
+    Ingrese la calle donde vive del cliente:
+    <input type="text" name="nombreCalleDomicilio" size="50" value="{{nombreCalleDomicilio}}">
+
+    <br>
+
+    Ingrese el numero de la calle donde vive del cliente:
+    <input type="number" name="numeroCalleDomicilio" value="{{numeroCalleDomicilio}}">
+
+    <br>
+
+    Ingrese el numero de telefono del cliente:
+    <input type="number" name="Movil01" value="{{Movil01}}">
+
+    <br>
+
+    Ingrese otro numero de telefono del cliente:
+    <input type="number" name="Movil02" value="{{Movil02}}">
+
+    <br>
+
+    Ingrese el Email del cliente:
+    <input type="text" name="email" size="50" value="{{email}}">
+
+    <br>
+
+    <input type="hidden" name="idClientes" size="10" value="{{idClientes}}">  
+
+    <br>
+
+    <input type="submit" value="Modificar">
+  </form>
+{{/each}}  

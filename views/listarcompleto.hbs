@@ -1,0 +1,33 @@
+<table border="1">
+  <tr>
+    <td>Id</td>
+    <td>Nombre</td>
+    <td>Apellido</td>
+    <td>Fecha de Nacimiento</td>
+    <td>Peso</td>
+    <td>Altura</td>
+    <td>Localidad</td>
+    <td>Calle domicilio</td>
+    <td>Numero de calle</td>
+    <td>Primer teléfono</td>
+    <td>Segundo teléfono</td>
+    <td>Email</td>
+  </tr>
+  {{#each clientes}}
+  <tr>  
+    <td> {{idClientes}} </td> 
+    <td> {{nombre}} </td> 
+    <td> {{apellido}} </td>
+    <td> {{FechaNac}} </td>
+    <td> {{peso}} </td>
+    <td> {{altura}} </td>
+    <td> {{localidad}} </td>
+    <td> {{nombreCalleDomicilio}} </td>
+    <td> {{numeroCalleDomicilio}} </td>
+    <td> {{Movil01}} </td>
+    <td> {{Movil02}} </td>
+    <td> {{email}} </td>
+  </tr>   
+  {{/each}}
+</table>
+<a href="/">Retornar</a>
